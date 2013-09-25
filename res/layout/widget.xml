@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/widget_bg" >
+
+    <TextView
+        android:id="@+id/hostName"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Host Name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/stat_layout"
+        android:layout_below="@+id/hostName"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/success"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="#067100"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Success" />
+
+            <TextView
+                android:id="@+id/scount"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textColor="#34637C"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="TextView" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/failure"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="#951E0B"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Failure" />
+
+            <TextView
+                android:id="@+id/fcount"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textColor="#34637C"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="TextView" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/stat_layout" >
+        
+        <Button
+        android:id="@+id/start"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="START" />
+        
+        <Button
+        android:id="@+id/set"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="SET" />
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>
